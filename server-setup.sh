@@ -65,6 +65,7 @@ if ! grep -q "${CUDA_LIB_PATH}" ~/.bashrc; then
 fi
 
 echo "Done. You might want to run 'source ~/.bashrc' to update the current shell session."
+source ~/.bashrc
 
 git clone "https://github.com/mlc-ai/mlc-llm.git" --recursive
 cd mlc-llm
