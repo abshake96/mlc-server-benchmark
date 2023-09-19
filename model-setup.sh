@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.bashrc
+
 # Check if the user provided at least one argument
 if [[ $# -lt 1 ]]; then
     echo "Usage: $0 <hf-path> [--use-safetensors]"
