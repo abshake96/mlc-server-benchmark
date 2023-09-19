@@ -45,13 +45,13 @@ install_pip3
 install_git-lfs
 git-lfs install
 
-pip install --pre --force-reinstall mlc-ai-nightly-cu121 mlc-chat-nightly-cu121 -f https://mlc.ai/wheels
+pip install --pre --force-reinstall mlc-ai-nightly-cu118 mlc-chat-nightly-cu118 -f https://mlc.ai/wheels
 
-wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda_12.1.0_530.30.02_linux.run
-sh cuda_12.1.0_530.30.02_linux.run --toolkit --silent
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+sh cuda_11.8.0_520.61.05_linux.run --toolkit --silent
 
-CUDA_BIN_PATH="/usr/local/cuda-12.1/bin"
-CUDA_LIB_PATH="/usr/local/cuda-12.1/lib64"
+CUDA_BIN_PATH="/usr/local/cuda-11.8/bin"
+CUDA_LIB_PATH="/usr/local/cuda-11.8/lib64"
 
 # Check if the paths are already in the respective variables
 if ! grep -q "${CUDA_BIN_PATH}" ~/.bashrc; then
